@@ -1,3 +1,31 @@
+$(document).ready(function(){
+
+    $('html, body').css({
+        overflow: 'hidden',
+        height: '100%'
+    });
+
+    setTimeout(function() { hideCurtain() }, 1000);
+
+});
+
+function hideCurtain() {
+    $('.top-curtain').animate({ left: '100vw' }, 400, 'swing');
+    $('.bottom-curtain').animate({ left: '-100vw' }, 
+        { 
+            duration: 400,
+            easing: 'swing',
+            complete: function() {
+                $('.loading').css('display','none');
+                $('html, body').css({
+                    overflow: 'auto',
+                    height: 'auto'
+                });
+            }
+        });
+}   
+
+
 //Click event to scroll to top
 $('.scrollToTop').click(function(){
     $('html, body').animate({scrollTop : 0},400);

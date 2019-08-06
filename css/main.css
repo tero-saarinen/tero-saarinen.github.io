@@ -108,6 +108,23 @@ textarea {
   --teal: #7FFFD4;
 }
 
+.loading {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+.loaded {
+  display: none;
+}
+
+.top-curtain, .bottom-curtain {
+  position: relative;
+  background: var(--pink);
+  width: 100vw;
+  height: 50vh;
+}
 
 .navbar {
     top: -58px;
@@ -154,6 +171,7 @@ textarea {
 .tag-line {
   padding-left: 20%;
   padding-right: 20%;
+  padding-bottom: 2%;
 }
 
 .dot {
@@ -287,6 +305,8 @@ textarea {
 }
 
 .btn-xl {
+  position: relative;
+  display: inline-block;
   font-family: europa, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -296,8 +316,6 @@ textarea {
   color: #000;
   text-decoration: none;
   background: var(--yellow);
-  position: relative;
-  bottom: -40px;
 }
 
 .btn-xl:hover {
