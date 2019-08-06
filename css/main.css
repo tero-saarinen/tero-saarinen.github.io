@@ -294,7 +294,7 @@ textarea {
   display: block;
   position: relative;
   width: 33%;
-  min-width: 400px;
+  min-width: 375px;
   background-color: #FFF;
   text-align: center;
 }
