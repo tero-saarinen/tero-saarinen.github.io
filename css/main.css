@@ -271,7 +271,7 @@ textarea {
   text-align: center;
   width: 80%;
   margin-bottom: 5%;
-  border-bottom: solid var(--pink);
+  border-bottom: medium solid #FF009B;;
 }
 
 .flex-item {
