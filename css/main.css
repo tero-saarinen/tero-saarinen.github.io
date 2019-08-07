@@ -265,6 +265,15 @@ textarea {
   padding-top: 10px;
 }
 
+.section-header {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 5%;
+  border-bottom: solid var(--pink);
+}
+
 .flex-item {
   width: 20%;
   background-color: #FFF;
