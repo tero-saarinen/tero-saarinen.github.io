@@ -108,6 +108,8 @@ textarea {
   --teal: #7FFFD4;
 }
 
+/* Loading screen */
+
 .loading {
   position: absolute;
   width: 100vw;
@@ -143,40 +145,12 @@ textarea {
     top: 0px;
 }
 
-.barcode {
-  font-family: 'Libre Barcode 128 Text', cursive;
-  font-size: 3em;
-  font-weight: normal;
-  margin: 0;
-  display: block;
-}
-
 #ui-box rect {
   transition: fill 0.5s ease;
 }
 
 #ui-box:hover rect {
   fill: #000;
-}
-
-.europa {
-  font-family: europa, sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  text-transform: uppercase;
-  display: block;
-  font-size: 1.8em;
-}
-
-.tag-line {
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 2%;
-}
-
-.dot {
-  color: var(--pink);
-  font-size: 2em;
 }
 
 .hero-container {
@@ -226,6 +200,29 @@ textarea {
   margin-top: -70%;
 }
 
+.barcode {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 3em;
+  font-weight: normal;
+  margin: 0;
+  display: block;
+}
+
+.europa {
+  font-family: europa, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.8em;
+}
+
+.tag-line {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 2%;
+}
+
 .hero-copy {
   position: relative;
   display: block;
@@ -233,6 +230,28 @@ textarea {
   margin-right: auto;
   top: 18%;
   text-align: center;
+}
+
+.btn-xl {
+  position: relative;
+  display: inline-block;
+  font-family: europa, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 15px;
+  color: #000;
+  text-decoration: none;
+  background: var(--yellow);
+}
+
+.btn-xl:hover {
+  border-radius: 0.5em;
+  color: #FFF;
+  background: var(--pink);
+  -webkit-transition: border-radius 0.4s; /* Safari prior 6.1 */
+  transition: border-radius 0.4s;
 }
 
 .flex-container {
@@ -250,14 +269,18 @@ textarea {
   width: 20%;
   background-color: #FFF;
   min-width: 320px;
-  text-align: center;
-  padding: 80px 0px 80px 0px;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  padding: 40px;
+  margin: 10px;
+  overflow: hidden;
 }
 
 .flex-item svg {
   padding-bottom: 20px;
+}
+
+.flex-item:hover {
+    background: #000;
+    color: #FFF;
 }
 
 .flex-item:hover svg {
@@ -270,19 +293,33 @@ textarea {
   transform: scale(1);
 }
 
-.overlay {
-  position: absolute;
+.flex-item:hover .star-wrapper {
   visibility: visible;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255,0,150,0.6);
-  opacity: 0;
-  transition: visibility 0s, opacity 0.2s ease-in-out;
-  color: #FFF;
-  z-index: 1;
-  -webkit-box-shadow:inset 0px 0px 0px 4px #000;
-  -moz-box-shadow:inset 0px 0px 0px 4px #000;
-  box-shadow:inset 0px 0px 0px 4px #000;
+}
+
+.dot {
+  color: var(--pink);
+  font-size: 2em;
+}
+
+.star-wrapper {
+  visibility: hidden;
+}
+
+.flex-item-xl {
+  display: block;
+  position: relative;
+  width: 30%;
+  min-width: 375px;
+  background-color: #FFF;
+  text-align: center;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.flex-item-xl img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .flex-item-xl:hover .overlay {
@@ -318,46 +355,23 @@ textarea {
   }
 }
 
+.overlay {
+  position: absolute;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,0,150,0.6);
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s ease-in-out;
+  color: #FFF;
+  z-index: 1;
+  -webkit-box-shadow:inset 0px 0px 0px 4px #000;
+  -moz-box-shadow:inset 0px 0px 0px 4px #000;
+  box-shadow:inset 0px 0px 0px 4px #000;
+}
+
 .details {
   padding-top: 35%;
-}
-
-.flex-item-xl {
-  display: block;
-  position: relative;
-  width: 30%;
-  min-width: 375px;
-  background-color: #FFF;
-  text-align: center;
-  overflow: hidden;
-  margin: 10px;
-}
-
-.flex-item-xl img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.btn-xl {
-  position: relative;
-  display: inline-block;
-  font-family: europa, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  padding: 15px;
-  color: #000;
-  text-decoration: none;
-  background: var(--yellow);
-}
-
-.btn-xl:hover {
-  border-radius: 0.5em;
-  color: #FFF;
-  background: var(--pink);
-  -webkit-transition: border-radius 0.4s; /* Safari prior 6.1 */
-  transition: border-radius 0.4s;
 }
 
 footer {
