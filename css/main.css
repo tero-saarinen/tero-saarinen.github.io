@@ -156,32 +156,23 @@ textarea {
 .hero-container {
   display: block;
   position: relative;
-  padding-top: 5%;
-  min-height: 100vh;
-}
-
-@media screen and (max-width: 992px) {
-  .hero-container {
-    padding-top: 18%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hero-container {
-    padding-top: 50%;
-  }
+  height: 100vh;
+  overflow: none;
 }
 
 .ui-badge {
   display: block;
   position: relative;
-  width: 25%;
-  height: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 25%;
+  top: 18%;
+  text-align: center;
+  width: 28%;
+  height: 0;
+  padding-bottom: 28%;
   overflow: hidden;
   background: var(--pink);
+  color: #FFF;
   transition: background 0.5s ease;
 }
 
@@ -227,20 +218,17 @@ textarea {
 }
 
 .tag-line {
-  position: relative;
-  padding-top: 2%;
-  text-align: center;
-  display: block;
-  font-size: 8vmin;
-  line-height: 1em;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 2%;
 }
 
-.hero-buttons {
+.hero-copy {
   position: relative;
   display: block;
-  width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 18%;
   text-align: center;
 }
 
