@@ -162,13 +162,13 @@ textarea {
 
 @media screen and (max-width: 768px) {
   .hero-container {
-    padding-top: 20%;
+    padding-top: 10%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .hero-container {
-    padding-top: 50%;
+    padding-top: 40%;
   }
 }
 
@@ -230,9 +230,11 @@ textarea {
 }
 
 .tag-line {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
   padding-bottom: 2%;
+  font-size: 8vmin;
 }
 
 .hero-copy {
