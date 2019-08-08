@@ -156,8 +156,20 @@ textarea {
 .hero-container {
   display: block;
   position: relative;
-  height: 100vh;
-  overflow: none;
+  min-height: 100vh;
+  padding-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    padding-top: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-container {
+    padding-top: 50%;
+  }
 }
 
 .ui-badge {
