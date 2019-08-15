@@ -157,18 +157,28 @@ textarea {
   display: block;
   position: relative;
   min-height: 100vh;
+<<<<<<< HEAD
+}
+
+.hero-wrapper {
+	position: relative;
+	display: block;
+	padding-top: 10%;
+	margin-left: 10%;
+=======
   padding-top: 5%;
   background-image: url("/img/bg.jpg");
+>>>>>>> f37a0a11dddc189b5d597d03bf826e3d5ed630ff
 }
 
 @media screen and (max-width: 768px) {
-  .hero-container {
-    padding-top: 10%;
+  .hero-wrapper {
+    padding-top: 20%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .hero-container {
+  .hero-wrapper {
     padding-top: 40%;
   }
 }
@@ -176,13 +186,11 @@ textarea {
 .ui-badge {
   display: block;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
   top: 18%;
   text-align: center;
-  width: 28%;
+  width: 200px;
   height: 0;
-  padding-bottom: 28%;
+  padding-bottom: 200px;
   overflow: hidden;
   background: var(--pink);
   color: #FFF;
@@ -213,6 +221,29 @@ textarea {
   margin-top: -70%;
 }
 
+
+.jubilat {
+  font-family: jubilat, serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-family: jubilat, serif;
+  font-weight: 600;
+  font-style: normal;
+  display: block;
+  font-size: 1.8em;
+  margin-block-end: 0;
+}
+
+.europa {
+  font-family: europa, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .barcode {
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size: 3em;
@@ -221,30 +252,17 @@ textarea {
   display: block;
 }
 
-.europa {
-  font-family: europa, sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  text-transform: uppercase;
-  display: block;
-  font-size: 1.8em;
-}
-
 .tag-line {
-  padding-left: 5%;
-  padding-right: 5%;
+  display: block;
   padding-top: 2%;
   padding-bottom: 2%;
   font-size: 8vmin;
+  line-height: 1em;
 }
 
 .hero-copy {
   position: relative;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  top: 18%;
-  text-align: center;
 }
 
 .btn-xl {
