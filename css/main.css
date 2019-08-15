@@ -157,7 +157,6 @@ textarea {
   display: block;
   position: relative;
   min-height: 100vh;
-<<<<<<< HEAD
 }
 
 .hero-wrapper {
@@ -165,21 +164,11 @@ textarea {
 	display: block;
 	padding-top: 10%;
 	margin-left: 10%;
-=======
-  padding-top: 5%;
-  background-image: url("/img/bg.jpg");
->>>>>>> f37a0a11dddc189b5d597d03bf826e3d5ed630ff
 }
 
 @media screen and (max-width: 768px) {
   .hero-wrapper {
     padding-top: 20%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hero-wrapper {
-    padding-top: 40%;
   }
 }
 
@@ -258,6 +247,21 @@ h2 {
   padding-bottom: 2%;
   font-size: 8vmin;
   line-height: 1em;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-wrapper {
+    padding-top: 40%;
+  }
+  .ui-badge {
+    width: 150px;
+    padding-bottom: 150px;
+  }
+
+  .tag-line {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }
 
 .hero-copy {
