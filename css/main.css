@@ -106,6 +106,7 @@ textarea {
   --pink: #FF009B;
   --green: #9EFF00;
   --teal: #7FFFD4;
+  --blue: #0074FF;
 }
 
 /* Loading screen */
@@ -224,6 +225,7 @@ h2 {
   display: block;
   font-size: 1.8em;
   margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 .europa {
@@ -418,6 +420,25 @@ h2 {
 
 .details {
   padding-top: 35%;
+}
+
+.modal-header {
+  top: 0px;
+  position: fixed;
+  background: #FFF;
+  height: 50px;
+  padding: 4px;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0px 6px var(--blue);
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+.modal-content {
+  padding: 10%;
 }
 
 footer {
