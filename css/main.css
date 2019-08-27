@@ -354,79 +354,12 @@ h2 {
   visibility: hidden;
 }
 
-.flex-item-xl, .flex-item-logo {
-  display: block;
-  position: relative;
+.slider {
   width: 30%;
   min-width: 375px;
   background-color: #FFF;
   text-align: center;
-  overflow: hidden;
   margin: 10px;
-}
-
-.flex-item-xl img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.flex-item-xl:hover .overlay {
-  visibility: visible;
-  opacity: 1;
-}
-
-.flex-item-xl:hover .blur {
-  -webkit-animation: blur 0.2s linear forwards;
-  -moz-animation: blur 0.2s linear forwards;
-  -ms-animation: blur 0.2s linear forwards;
-  -o-animation: blur 0.2s linear forwards;
-  animation: blur 0.2s linear forwards;
-}
-
-@-webkit-keyframes blur {
-  to {
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-  }
-}
-@-moz-keyframes blur {
-  to {
-    -moz-filter: blur(5px);
-    filter: blur(5px);
-  }
-}
-@keyframes blur {
-  to {
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    filter: blur(5px);
-  }
-}
-
-.overlay {
-  position: absolute;
-  visibility: visible;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255,0,150,0.6);
-  opacity: 0;
-  transition: visibility 0s, opacity 0.2s ease-in-out;
-  color: #FFF;
-  z-index: 1;
-  -webkit-box-shadow:inset 0px 0px 0px 4px #000;
-  -moz-box-shadow:inset 0px 0px 0px 4px #000;
-  box-shadow:inset 0px 0px 0px 4px #000;
-}
-
-.details {
-  padding-top: 35%;
-}
-
-.flex-item-logo {
-/*  border: solid red; */
-}
-
-.slider {
   height: 30%;
   display: flex;
   overflow-x: auto;
@@ -435,7 +368,6 @@ h2 {
 }
 
 .slider > div {
-  /* CURRENT way. */
   scroll-snap-align: start;
 }
 
@@ -447,7 +379,8 @@ h2 {
 }
 
 .slide img {
-  width: 100%;
+  max-width: 100%;
+  min-width: 375px;
 }
 
 /*
