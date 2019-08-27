@@ -26,7 +26,7 @@ function hideCurtain() {
 }   
 
 
-//Click event to scroll to top
+// Click event to scroll to top
 $('.scrollToTop').click(function(){
     $('html, body').animate({scrollTop : 0},400);
     return false;
@@ -44,7 +44,7 @@ $(window).on('scroll', function () {
     }
 });
 
-$('a').click(function(){
+$('.anchor').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top -58
     }, 500);
