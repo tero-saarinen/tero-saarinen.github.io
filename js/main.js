@@ -50,3 +50,15 @@ $('.anchor').click(function(){
     }, 500);
     return false;
 });
+
+$('.overlay').click(function(){
+  // action goes here!!
+  //alert('yooooo');
+  $('body').css('overflow', 'hidden');
+});
+
+$('.scroll-on').click(function(){
+  // action goes here!!
+  // alert('SCROLL ONNNNN');
+  $('body').css('overflow', 'auto');
+});
