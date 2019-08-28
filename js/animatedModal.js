@@ -24,9 +24,9 @@
             color: '#FFFFFF', 
             opacityIn:'1',  
             opacityOut:'0', 
-            animatedIn:'fadeInLeft',
-            animatedOut:'fadeOutLeft',
-            animationDuration:'.4s', 
+            animatedIn:'rollIn',
+            animatedOut:'rollOut',
+            animationDuration:'0.4s', 
             overflow:'auto', 
             // Callbacks
             beforeOpen: function() {},           
