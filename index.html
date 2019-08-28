@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/stars.css">
-<!--  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"> -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -198,11 +198,12 @@
   </div>
 
 <!-- Works -->
-  <div class="flex-container"  id="works">
+  <div class="flex-container" id="works">
     <div class="section-header europa">
       <h1>Works</h1>
     </div>
     <div class="slider">
+        <a class="overlay" id="demo01" href="#animatedModal01"></a>
         <div class="slide">
           <img src="img/logos/dj_professionals.svg">
         </div>
@@ -295,7 +296,35 @@
       </div>
     </div>
   </div>
-  
+ 
+  <!--DEMO01-->
+  <div id="animatedModal01">
+
+      <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div class="flex-container gallery">
+            <div class="flex-item-works">
+              <img src="img/logos/dj_professionals.svg">
+            </div>
+            <div class="flex-item-works">
+              <img src="img/logos/dj_professionals2.svg">
+            </div>
+            <div class="flex-item-works">
+              <img src="img/3.png">
+            </div>        
+        </div>
+
+    </div>
+
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+      <div class="modal-actions">
+        <div class="close-animatedModal01">
+            <span class="europa bolder">CLOSE</span>
+        </div>
+      </div>
+
+  </div>
+
   <footer>
       <span class="barcode">ui.works</span>
       <span class="copyright">Copyright &copy; 2019</span>
@@ -306,11 +335,11 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-<!--  <script src="js/animatedModal.js"></script>
+  <script src="js/animatedModal.js"></script>
   <script>
     $("#demo01").animatedModal();
     $("#demo02").animatedModal();
-  </script> -->
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
