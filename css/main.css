@@ -129,6 +129,10 @@ textarea {
   height: 50vh;
 }
 
+.scroll-fix {
+  overflow: hidden;
+}
+
 .navbar {
     top: -58px;
     position: fixed;

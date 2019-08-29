@@ -52,13 +52,9 @@ $('.anchor').click(function(){
 });
 
 $('.overlay').click(function(){
-  // action goes here!!
-  //alert('yooooo');
-  $('body').css('overflow', 'hidden');
+    $('body').addClass('scroll-fix');
 });
 
 $('.scroll-on').click(function(){
-  // action goes here!!
-  // alert('SCROLL ONNNNN');
-  $('body').css('overflow', 'auto');
+    $('body').removeClass('scroll-fix');
 });
