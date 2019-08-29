@@ -99,6 +99,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Color variables */
 
 :root {
@@ -131,6 +136,7 @@ textarea {
 
 .scroll-fix {
   overflow: hidden;
+  position: fixed;
 }
 
 .navbar {
