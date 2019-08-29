@@ -326,11 +326,6 @@ h2 {
   padding-bottom: 20px;
 }
 
-.flex-item:hover {
-    background: #000;
-    color: #FFF;
-}
-
 .flex-item:hover svg {
   transition: all .2s ease-in-out;
   transform: scale(1.1);
@@ -339,10 +334,6 @@ h2 {
 .flex-item:not( :hover ) svg {
   transition: all .2s ease-in-out;
   transform: scale(1);
-}
-
-.flex-item:hover .star-wrapper {
-  visibility: visible;
 }
 
 .dot {
