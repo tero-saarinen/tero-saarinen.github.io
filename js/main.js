@@ -50,7 +50,7 @@ $('.anchor').click(function(){
     return false;
 });
 
-var scrolled_val='';
+var scrolled_val= '';
 
 function scrollValue() {
 	scrolled_val = $(document).scrollTop().valueOf();
