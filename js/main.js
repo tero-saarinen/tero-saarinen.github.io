@@ -1,28 +1,25 @@
 $(document).ready(function(){
-
     $('html, body').css({
         overflow: 'hidden',
         height: '100%'
     });
 
     setTimeout(function() { hideCurtain() }, 1000);
-
 });
 
 function hideCurtain() {
     $('.top-curtain').animate({ left: '100vw' }, 400, 'swing');
-    $('.bottom-curtain').animate({ left: '-100vw' }, 
-        { 
-            duration: 400,
-            easing: 'swing',
-            complete: function() {
-                $('.loading').css('display','none');
-                $('html, body').css({
-                    overflow: 'auto',
-                    height: 'auto'
-                });
-            }
-        });
+    $('.bottom-curtain').animate({ left: '-100vw' }, { 
+        duration: 400,
+        easing: 'swing',
+        complete: function() {
+            $('.loading').css('display','none');
+            $('html, body').css({
+                overflow: 'auto',
+                height: 'auto'
+            });
+        }
+    });
 }   
 
 // Click event to scroll to top
@@ -53,12 +50,12 @@ $('.anchor').click(function(){
 var scrolled_val= '';
 
 function scrollValue() {
-	scrolled_val = $(document).scrollTop().valueOf();
+    scrolled_val = $(document).scrollTop().valueOf();
 }
 
 $('.overlay').click(function(){
     $('body').addClass('scroll-fix');
-	scrollValue();
+    scrollValue();
 });
 
 $('.scroll-on').click(function(){
