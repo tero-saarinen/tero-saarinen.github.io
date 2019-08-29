@@ -25,7 +25,6 @@ function hideCurtain() {
         });
 }   
 
-
 // Click event to scroll to top
 $('.scrollToTop').click(function(){
     $('html, body').animate({scrollTop : 0},400);
@@ -51,10 +50,18 @@ $('.anchor').click(function(){
     return false;
 });
 
+var scrolled_val='';
+
+function scrollValue() {
+	scrolled_val = $(document).scrollTop().valueOf();
+}
+
 $('.overlay').click(function(){
     $('body').addClass('scroll-fix');
+	scrollValue();
 });
 
 $('.scroll-on').click(function(){
     $('body').removeClass('scroll-fix');
+    $('body').scrollTop(scrolled_val);
 });
