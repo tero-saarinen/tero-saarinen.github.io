@@ -327,6 +327,7 @@ h2 {
 }
 
 .flex-item, .flex-item-works {
+  position: relative;
   width: 30%;
   background-color: #FFF;
   min-width: 295px;
@@ -347,6 +348,25 @@ h2 {
 .flex-item:not( :hover ) svg {
   transition: all .2s ease-in-out;
   transform: scale(1);
+}
+
+.ribbon {
+  display: block;
+  position: absolute;
+  right: 40px;
+  width: 0;
+  height: 0;
+  border-top: 140px solid var(--blue);
+  border-left: 140px solid transparent;
+}
+
+.ribbon-text {
+  font-family: europa, sans-serif;
+  color: #FFF;
+  text-align: right;
+  position: absolute;
+  top: -130px;
+  right: 14px;
 }
 
 .dot {
