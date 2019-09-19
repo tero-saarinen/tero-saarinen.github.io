@@ -421,16 +421,6 @@ h2 {
   padding-bottom: 10%;
 }
 
-/*
-
-@supports (scroll-snap-type) {
-  .slider > a {
-    display: none;
-  }
-}
-
-*/
-
 .overlay {
   position: absolute;
   display: block;
@@ -445,15 +435,16 @@ h2 {
 footer {
   display: inline-block;
   text-align: center;
-  height: 100px;
+  height: 20px;
   width: 100%;
   color: #FFF;
   background-color: #111;
-  padding: 10px 0 10px 0;
+  padding: 40px 0 40px 0;
 }
 
-.copyright {
-  font-size: 0.8em;
+footer a {
+  text-decoration: none;
+  color: var(--yellow);
 }
 
 /* ==========================================================================
