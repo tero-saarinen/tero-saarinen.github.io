@@ -173,3 +173,25 @@ perspective effects (not including the modals and the overlay).
     transform: scale(1);
     opacity: 1;
 }
+
+
+.md-close {
+    opacity: 0;
+    z-index: 9999999;
+    position: fixed;
+    top: 0px;
+    right: 20px;
+    color: #fff;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .6);
+    transition: all .2s ease 0s;
+    -webkit-transition: all .2s ease 0s;
+    -moz-transition: all .2s ease 0s;
+    pointer-events: none;
+}
+.md-close-active {
+    opacity: 1;
+    display: block;
+    top: 20px;
+    pointer-events: auto;
+}
