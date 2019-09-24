@@ -183,6 +183,7 @@ perspective effects (not including the modals and the overlay).
     right: 20px;
     color: #fff;
     padding: 10px;
+    cursor: pointer;
     background-color: rgba(0, 0, 0, .6);
     transition: all .2s ease 0s;
     -webkit-transition: all .2s ease 0s;
@@ -194,4 +195,8 @@ perspective effects (not including the modals and the overlay).
     display: block;
     top: 20px;
     pointer-events: auto;
+}
+
+.md-close:hover {
+    background-color: var(--pink);
 }
