@@ -117,6 +117,10 @@ html {
   --blue: #0074FF;
 }
 
+a {
+  color: var(--yellow);
+}
+
 /* Loading screen */
 
 .loading {

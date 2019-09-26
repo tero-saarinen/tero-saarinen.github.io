@@ -30,7 +30,9 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-  
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 </head>
 
 <body>
@@ -370,6 +372,20 @@
     </div>
   </div>
 
+  <div class="md-modal md-effect-12" id="modal-privacy-policy">
+    <div class="md-content">
+      
+      <div style="max-width: 600px; margin: 0 auto;">
+        <h4>Hotjar</h4>
+
+        <p>We use <a href="http://www.hotjar.com" target="_blank">Hotjar</a> in order to better understand our users&#8217; needs and to optimize this service and experience. Hotjar is a technology service that helps us better understand our users experience (e.g. how much time they spend on which pages, which links they choose to click, what users do and don&#8217;t like, etc.) and this enables us to build and maintain our service with user feedback. Hotjar uses cookies and other technologies to collect data on our users&#8217; behavior and their devices (in particular device&#8217;s IP address (captured and stored only in anonymized form), device screen size, device type (unique device identifiers), browser information, geographic location (country only), preferred language used to display our website). Hotjar stores this information in a pseudonymized user profile. Neither Hotjar nor we will ever use this information to identify individual users or to match it with further data on an individual user. For further details, please see Hotjar&#8217;s privacy policy by clicking on <a href="https://www.hotjar.com/legal/policies/privacy" target="_blank">this link</a>.
+         
+        You can opt-out to the creation of a user profile, Hotjar&#8217;s storing of data about your usage of our site and Hotjar&#8217;s use of tracking cookies on other websites by following this <a href="https://www.hotjar.com/legal/compliance/opt-out" target="_blank">opt-out link</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
   <div class="md-overlay"></div><!-- the modal overlay element -->  
 
   <footer>
@@ -386,7 +402,28 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/main.js"></script>
   <script src="js/modal/classie.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "rgba(17, 17, 17, 0.8)"
+      },
+      "button": {
+        "background": "#FFF800"
+      },
+    },
+    // "content": {
+    //   href: 'http://ui.works.test/privacy-policy',
+    // },
+    elements: {
+       messagelink: '<span id="cookieconsent:desc" class="cc-message">{{message}} <span aria-label="learn more about cookies" tabindex="0" class="cc-link md-trigger" data-modal="modal-privacy-policy"target="_blank">{{link}}</span></span>',
+    },
+    "position": "bottom-right"
+  });
+  </script>
   <script src="js/modal/modalEffects.js"></script>
+
 </body>
 
 </html>
